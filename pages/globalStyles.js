@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Public Sans', sans-serif;
         font-size:  18px;
+        background-color: #f1f1f1;
     }
 `;
 
