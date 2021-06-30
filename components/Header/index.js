@@ -1,13 +1,12 @@
 import React from 'react';
 
-import { Container, Logo, Image, Text } from './styles';
+import { Container, Logo, Image } from './styles';
 
 function HeaderComponent() {
   return (
     <Container>
         <Logo>
-            <Image />
-            <Text>easybank</Text>
+            <Image src="/logo.svg" alt="easybank logo" />
         </Logo>
     </Container>
   );
