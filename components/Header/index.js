@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Container, Logo, Image } from './styles';
+import { Container, Image, MenuIcon } from './styles';
 
 function HeaderComponent() {
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+  const handleMenu = () => {
+    setIsOpenMenu(prevState => !prevState);
+  }
+
   return (
     <Container>
-        <Logo>
-            <Image src="/logo.svg" alt="easybank logo" />
-        </Logo>
+          <Image src="/logo.svg" alt="easybank logo" />
+          <MenuIcon onClick={handleMenu}>
+            {isOpenMenu ? 
+              <Image src="/icon-close.svg" alt="menu-close icon" />
+              :
+              <Image src="/icon-hamburger.svg" alt="menu-hamburger icon" />
+            }
+          </MenuIcon>
     </Container>
   );
 }
