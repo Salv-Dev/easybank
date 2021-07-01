@@ -4,15 +4,17 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  padding: 0 25px;
   background-color: hsl(0, 0%, 98%);
 
-  @media(min-width: 800px) {
-    padding: 20px 40px;
+  @media(min-width: 900px) {
+    padding: 0 100px;
   }
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  margin: 20px 0;
+`;
 
 export const MenuDesktop = styled.ul`
   display: none;
@@ -27,12 +29,29 @@ export const MenuDesktop = styled.ul`
 export const Item = styled.li`
   & > a {
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 20px 0;
+    margin: 0 20px;
     color: hsl(233, 8%, 62%);
     font-size: 0.8rem;
+    position: relative;
 
-    &:hover, &:active {
-      text-decoration: underline;
+    &:before {
+      display: none;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, rgba(49,211,92,1) 14%, rgba(43,183,218,1) 100%);
+    }
+
+    &:hover {
+      color: black;
+    }
+
+    &:hover::before, &:active::before {
+      display: block;
     }
   }
 `;
@@ -45,6 +64,11 @@ export const BtnInvite = styled.button`
   color: white;
   background: linear-gradient(90deg, rgba(49,211,92,1) 14%, rgba(43,183,218,1) 100%);
   font-size: 0.7rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   @media(min-width: 800px) {
     display: flex;
