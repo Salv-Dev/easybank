@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Container, Image, MenuIcon } from './styles';
+import { Container, Image, MenuIcon, MenuDesktop, Item, BtnInvite } from './styles';
 
 function HeaderComponent() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -12,6 +12,14 @@ function HeaderComponent() {
   return (
     <Container>
           <Image src="/logo.svg" alt="easybank logo" />
+          <MenuDesktop>
+            <Item><a href="#">Home</a></Item>
+            <Item><a href="#">About</a></Item>
+            <Item><a href="#">Contact</a></Item>
+            <Item><a href="#">Blog</a></Item>
+            <Item><a href="#">Carreers</a></Item>
+          </MenuDesktop>
+          <BtnInvite>Request Invite</BtnInvite>
           <MenuIcon onClick={handleMenu}>
             {isOpenMenu ? 
               <Image src="/icon-close.svg" alt="menu-close icon" />
