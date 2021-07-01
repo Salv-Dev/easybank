@@ -18,7 +18,7 @@ export default function Home() {
           <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
         </Head>
         <Header />
-        <main>
+        <main style={{ marginTop: '60px'}}>
           <Slogan />
         </main>
       </div>
