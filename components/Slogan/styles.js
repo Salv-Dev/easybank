@@ -8,8 +8,9 @@ export const Container = styled.div`
 export const SloganImages = styled.div`
     position: relative;
     display: flex;
+    width: 100%;
 
-    & > .bg-mobile {
+    & > picture, & > picture > .bg-mobile {
         width: 100%;
     }
 
@@ -18,6 +19,10 @@ export const SloganImages = styled.div`
         bottom: 60px;
         width: 100%;
         background: transparent;
+
+        @media(min-width: 600px) {
+            bottom: 120px;
+        }
     }
 `;
 

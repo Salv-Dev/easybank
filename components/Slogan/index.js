@@ -6,7 +6,11 @@ function SloganComponent() {
   return (
     <Container>
         <SloganImages>
-          <img src="/bg-intro-mobile.svg" alt="background mobile slogan" className="bg-mobile" />
+          <picture>
+            <source srcSet="/bg-intro-mobile.svg" media="(max-width: 800px)" />
+            <source srcSet="/bg-intro-desktop.svg" />
+            <img src="/bg-intro-mobile.svg" alt="background mobile slogan" className="bg-mobile" />
+          </picture>
           <img src="/image-mockups.png" alt="mobile phone" className="fg-phone" />
         </SloganImages>
         <SloganText>
