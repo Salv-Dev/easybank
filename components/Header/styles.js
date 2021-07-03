@@ -12,8 +12,12 @@ export const Container = styled.header`
   padding: 0 25px;
   background-color: hsl(0, 0%, 98%);
 
+  @media(min-width: 800px) {
+    background-color: white;
+  }
+
   @media(min-width: 900px) {
-    padding: 0 100px;
+    padding: 0 15%;
   }
 `;
 
@@ -35,7 +39,7 @@ export const Item = styled.li`
   & > a {
     text-decoration: none;
     padding: 20px 0;
-    margin: 0 20px;
+    margin: 0 10px;
     color: hsl(233, 8%, 62%);
     font-size: 0.8rem;
     position: relative;
