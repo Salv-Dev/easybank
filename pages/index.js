@@ -2,6 +2,7 @@ import Head from 'next/head';
 import GlobalStyles from './globalStyles';
 
 import Header from './../components/Header';
+import Slogan from './../components/Slogan';
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
           <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
         </Head>
         <Header />
+        <main>
+          <Slogan />
+        </main>
       </div>
     </>
   )
