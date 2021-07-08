@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import MobileMenu from './../../components/MobileMenu';
 
 import { Container, Image, MenuIcon, MenuDesktop, Item, BtnInvite } from './styles';
 
 function HeaderComponent() {
+  const menuBtnRef = useRef(null);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const handleMenu = () => {
@@ -24,13 +25,13 @@ function HeaderComponent() {
             <BtnInvite>Request Invite</BtnInvite>
             <MenuIcon onClick={handleMenu}>
               {isOpenMenu ? 
-                <Image src="/icon-close.svg" alt="menu-close icon" />
+                <Image src="/icon-close.svg" alt="menu-close icon" ref={menuBtnRef} />
                 :
-                <Image src="/icon-hamburger.svg" alt="menu-hamburger icon" />
+                <Image src="/icon-hamburger.svg" alt="menu-hamburger icon" ref={menuBtnRef} />
               }
             </MenuIcon>
       </Container>
-      {isOpenMenu && <MobileMenu /> }
+      {isOpenMenu && <MobileMenu open={setIsOpenMenu} buttonRef={menuBtnRef} /> }
     </>
   );
 }

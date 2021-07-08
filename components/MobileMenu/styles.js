@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Menu = styled.div`
+export const Menu = styled.ul`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +11,10 @@ export const Menu = styled.div`
     border-radius: 8px;
     background-color: white;
     box-shadow: 2px 0px 151px 200px rgba(45,49,77,0.49);
+
+    @media(min-width: 800px) {
+        display: none;
+    }
 `;
 
 export const Item = styled.li`
