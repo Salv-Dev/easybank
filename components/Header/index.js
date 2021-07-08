@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import MobileMenu from './../../components/MobileMenu';
 
 import { Container, Image, MenuIcon, MenuDesktop, Item, BtnInvite } from './styles';
 
@@ -27,6 +28,7 @@ function HeaderComponent() {
               <Image src="/icon-hamburger.svg" alt="menu-hamburger icon" />
             }
           </MenuIcon>
+          <MobileMenu />
     </Container>
   );
 }
