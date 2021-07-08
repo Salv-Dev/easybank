@@ -30,7 +30,7 @@ function HeaderComponent() {
               }
             </MenuIcon>
       </Container>
-      {isOpenMenu && <MobileMenu />}
+      {isOpenMenu && <MobileMenu /> }
     </>
   );
 }
