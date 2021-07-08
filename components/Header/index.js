@@ -11,25 +11,27 @@ function HeaderComponent() {
   }
 
   return (
-    <Container>
-          <Image src="/logo.svg" alt="easybank logo" />
-          <MenuDesktop>
-            <Item><a href="#">Home</a></Item>
-            <Item><a href="#">About</a></Item>
-            <Item><a href="#">Contact</a></Item>
-            <Item><a href="#">Blog</a></Item>
-            <Item><a href="#">Carreers</a></Item>
-          </MenuDesktop>
-          <BtnInvite>Request Invite</BtnInvite>
-          <MenuIcon onClick={handleMenu}>
-            {isOpenMenu ? 
-              <Image src="/icon-close.svg" alt="menu-close icon" />
-              :
-              <Image src="/icon-hamburger.svg" alt="menu-hamburger icon" />
-            }
-          </MenuIcon>
-          <MobileMenu />
-    </Container>
+    <>
+      <Container>
+            <Image src="/logo.svg" alt="easybank logo" />
+            <MenuDesktop>
+              <Item><a href="#">Home</a></Item>
+              <Item><a href="#">About</a></Item>
+              <Item><a href="#">Contact</a></Item>
+              <Item><a href="#">Blog</a></Item>
+              <Item><a href="#">Carreers</a></Item>
+            </MenuDesktop>
+            <BtnInvite>Request Invite</BtnInvite>
+            <MenuIcon onClick={handleMenu}>
+              {isOpenMenu ? 
+                <Image src="/icon-close.svg" alt="menu-close icon" />
+                :
+                <Image src="/icon-hamburger.svg" alt="menu-hamburger icon" />
+              }
+            </MenuIcon>
+      </Container>
+      <MobileMenu />
+    </>
   );
 }
 
