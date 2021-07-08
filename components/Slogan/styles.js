@@ -31,6 +31,10 @@ export const SloganImages = styled.div`
             margin-top: -80px;
             margin-right: -60px;
         }
+
+        @media(min-width: 1200px) {
+            margin-top: -120px;
+        }
     }
 
     & > .fg-phone {
@@ -47,6 +51,12 @@ export const SloganImages = styled.div`
             width: 90%;
             top: -140px;
             right: -60px;
+        }
+
+        @media(min-width: 1200px) {
+            width: 80%;
+            top: -160px;
+            right: -90px;
         }
     }
 `;
@@ -74,10 +84,12 @@ export const Title = styled.h1`
 
     @media(min-width: 800px) {
         text-align: left;
+        font-size: 1.5rem;
         width: 70%;
     }
 
     @media(min-width: 1200px) {
+        font-size: 2rem;
         width: 65%;
     }
 `;
@@ -90,10 +102,12 @@ export const Text = styled.p`
 
     @media(min-width: 800px) {
         text-align: left;
+        font-size: 0.7rem;
         width: 70%;
     }
 
     @media(min-width: 1200px) {
+        font-size: 0.8rem;
         width: 65%;
     }
 `;
