@@ -64,7 +64,6 @@ export const SloganImages = styled.div`
 export const SloganText = styled.div`
     margin-top: -50px;
     padding: 0 25px;
-    z-index: 2;
     flex: 2;
 
     @media(min-width: 800px) {
