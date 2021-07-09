@@ -79,7 +79,7 @@ export const Title = styled.h1`
     font-size: 2rem;
     font-weight: 300;
     text-align: center;
-    color: hsl(233, 26%, 24%);
+    color: ${props => props.theme.colors.primary};
 
     @media(min-width: 800px) {
         text-align: left;
@@ -97,7 +97,7 @@ export const Text = styled.p`
     font-size: 0.8rem;
     margin-top: 10px;
     text-align: center;
-    color: hsl(233, 8%, 62%);
+    color: ${props => props.theme.colors.neutral.primary};
 
     @media(min-width: 800px) {
         text-align: left;
@@ -116,7 +116,7 @@ export const BtnInvite = styled.button`
   border: none;
   padding: 10px 25px;
   border-radius: 30px;
-  color: white;
+  color: ${props => props.theme.colors.neutral.white};
   background: linear-gradient(90deg, rgba(49,211,92,1) 14%, rgba(43,183,218,1) 100%);
   font-size: 0.7rem;
   cursor: pointer;

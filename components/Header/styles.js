@@ -10,10 +10,10 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 25px;
-  background-color: hsl(0, 0%, 98%);
+  background-color: ${props => props.theme.colors.neutral.tertiary};
 
   @media(min-width: 800px) {
-    background-color: white;
+    background-color: ${props => props.theme.colors.neutral.white};
   }
 
   @media(min-width: 900px) {
@@ -40,7 +40,7 @@ export const Item = styled.li`
     text-decoration: none;
     padding: 20px 0;
     margin: 0 10px;
-    color: hsl(233, 8%, 62%);
+    color: ${props => props.theme.colors.neutral.primary};
     font-size: 0.8rem;
     position: relative;
 
@@ -56,7 +56,7 @@ export const Item = styled.li`
     }
 
     &:hover {
-      color: black;
+      color: ${props => props.theme.colors.primary};
     }
 
     &:hover::before, &:active::before {
@@ -70,7 +70,7 @@ export const BtnInvite = styled.button`
   border: none;
   padding: 10px 25px;
   border-radius: 30px;
-  color: white;
+  color: ${props => props.theme.colors.neutral.white};
   background: linear-gradient(90deg, rgba(49,211,92,1) 14%, rgba(43,183,218,1) 100%);
   font-size: 0.7rem;
   cursor: pointer;
