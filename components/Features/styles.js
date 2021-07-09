@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
     display: flex;
-    height: 400px;
+    flex-direction: column;
     background-color: ${props => props.theme.colors.neutral.secondary};
     padding: 50px 20px;
 `;
