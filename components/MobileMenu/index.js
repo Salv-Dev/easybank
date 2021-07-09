@@ -20,7 +20,7 @@ function MobileMenuComponent({ open, buttonRef }) {
     }, []);
 
   return (
-    <ZoomIn duration="0.4s">
+    <ZoomIn duration="0.2s">
         <Menu onClick={clickOutside} ref={menuRef}>
             <Item><a href="#">Home</a></Item>
             <Item><a href="#">About</a></Item>
