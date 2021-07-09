@@ -9,7 +9,11 @@ export const Container = styled.div`
         flex-direction: row-reverse;
         align-items: center;
         margin-top: 60px;
-        margin-bottom: 0;
+        margin-bottom: -40px;
+    }
+
+    @media(min-width: 1200px) {
+        margin-bottom: -60px;
     }
 `;
 
@@ -69,6 +73,7 @@ export const SloganText = styled.div`
     flex: 2;
 
     @media(min-width: 800px) {
+        margin-top: -110px;
         z-index: 0;
     }
 
