@@ -1,12 +1,13 @@
 import Head from 'next/head';
 import GlobalStyles from './globalStyles';
 
+import Theme from './../utils/Theme';
 import Header from './../components/Header';
 import Slogan from './../components/Slogan';
 
 export default function Home() {
   return (
-    <>
+    <Theme>
       <GlobalStyles />
       <div>
         <Head>
@@ -22,6 +23,6 @@ export default function Home() {
           <Slogan />
         </main>
       </div>
-    </>
+    </Theme>
   )
 }
