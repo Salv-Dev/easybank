@@ -4,6 +4,7 @@ import GlobalStyles from './globalStyles';
 import Theme from './../utils/Theme';
 import Header from './../components/Header';
 import Slogan from './../components/Slogan';
+import Features from './../components/Features';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Header />
         <main>
           <Slogan />
+          <Features />
         </main>
       </div>
     </Theme>

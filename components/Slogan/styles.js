@@ -3,11 +3,13 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 
     @media(min-width: 800px) {
         flex-direction: row-reverse;
         align-items: center;
         margin-top: 60px;
+        margin-bottom: 0;
     }
 `;
 
@@ -120,7 +122,7 @@ export const BtnInvite = styled.button`
   background: linear-gradient(90deg, rgba(49,211,92,1) 14%, rgba(43,183,218,1) 100%);
   font-size: 0.7rem;
   cursor: pointer;
-  margin: 10px auto;
+  margin: 20px auto;
 
   &:hover {
     opacity: 0.5;
