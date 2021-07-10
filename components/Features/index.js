@@ -1,5 +1,5 @@
 import React from 'react';
-import features from './features';
+import features from './featuresMock';
 import Feature from './../Feature';
 
 import { Container, Header, Title, Description, ContainerFeatures } from './styles';
