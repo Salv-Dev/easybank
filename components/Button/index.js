@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Button } from './styles';
 
-function ButtonComponent({ visible }) {
+function ButtonComponent({ isVisible = true, children }) {
   return (
-      <Button visible={visible}>Request Invite</Button>
+      <Button isVisible={isVisible}>{ children }</Button>
   );
 }
 

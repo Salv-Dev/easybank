@@ -1,6 +1,7 @@
 import React from 'react';
+import Button from './../Button';
 
-import { Container, SloganImages, SloganText, Title, Text, BtnInvite } from './styles';
+import { Container, SloganImages, SloganText, Title, Text } from './styles';
 
 function SloganComponent() {
   return (
@@ -16,7 +17,7 @@ function SloganComponent() {
         <SloganText>
           <Title>Next generation digital banking</Title>
           <Text>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</Text>
-          <BtnInvite>Request Invite</BtnInvite>
+          <Button>Request Invite</Button>
         </SloganText>
     </Container>
   );

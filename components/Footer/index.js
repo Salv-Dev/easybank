@@ -15,6 +15,8 @@ function FooterComponent() {
                 <Image />
               </SocialMedia>
           </LogoAndSocialMedia>
+          
+
       </Container>
   );
 }

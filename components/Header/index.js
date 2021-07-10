@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
 import MobileMenu from './../../components/MobileMenu';
+import Button from './../../components/Button';
 
-import { Container, Image, MenuIcon, MenuDesktop, Item, BtnInvite } from './styles';
+import { Container, Image, MenuIcon, MenuDesktop, Item } from './styles';
 
 function HeaderComponent() {
   const menuBtnRef = useRef(null);
@@ -22,7 +23,7 @@ function HeaderComponent() {
               <Item><a href="#">Blog</a></Item>
               <Item><a href="#">Carreers</a></Item>
             </MenuDesktop>
-            <BtnInvite>Request Invite</BtnInvite>
+            <Button isVisible={false} >Request Invite</Button>
             <MenuIcon onClick={handleMenu}>
               {isOpenMenu ? 
                 <Image src="/icon-close.svg" alt="menu-close icon" ref={menuBtnRef} />

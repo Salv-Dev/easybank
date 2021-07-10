@@ -13,11 +13,11 @@ export const Container = styled.article`
     }
 
     @media(min-width: 600px) {
-        width: 250px;
+        width: 45%;
         margin: 0 20px 20px 0;
     }
 
-    @media(min-width: 700px) {
+    @media(min-width: 800px) {
         width: 280px;
     }
 `;
