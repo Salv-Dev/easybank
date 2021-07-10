@@ -70,6 +70,7 @@ export const ContainerFeatures = styled.div`
     @media(min-width: 600px) {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     @media(min-width: 1200px) {

@@ -5,6 +5,7 @@ import Theme from './../utils/Theme';
 import Header from './../components/Header';
 import Slogan from './../components/Slogan';
 import Features from './../components/Features';
+import LatestArticles from './../components/LatestArticles';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <main>
           <Slogan />
           <Features />
+          <LatestArticles />
         </main>
       </div>
     </Theme>
