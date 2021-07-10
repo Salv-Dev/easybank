@@ -102,7 +102,7 @@ export const Title = styled.h1`
 
 export const Text = styled.p`
     font-size: 0.8rem;
-    margin-top: 10px;
+    margin: 10px 0 20px 0;
     text-align: center;
     color: ${props => props.theme.colors.neutral.primary};
 
@@ -115,25 +115,5 @@ export const Text = styled.p`
     @media(min-width: 1200px) {
         font-size: 0.8rem;
         width: 65%;
-    }
-`;
-
-export const BtnInvite = styled.button`
-  display: flex;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 30px;
-  color: ${props => props.theme.colors.neutral.white};
-  background: linear-gradient(90deg, rgba(49,211,92,1) 14%, rgba(43,183,218,1) 100%);
-  font-size: 0.7rem;
-  cursor: pointer;
-  margin: 20px auto;
-
-  &:hover {
-    opacity: 0.5;
-  }
-
-  @media(min-width: 800px) {
-        margin: 20px 0;
     }
 `;

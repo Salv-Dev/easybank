@@ -17,8 +17,13 @@ export const Title = styled.h2`
     font-weight: 300;
     color: ${props => props.theme.colors.primary};
 
-    @media(min-width: 600px) {
+    @media(min-width: 800px) {
+        font-size: 1.5rem;
         text-align: left;
+    }
+
+    @media(min-width: 1200px) {
+        font-size: 2rem;
     }
 `;
 
@@ -29,6 +34,11 @@ export const ArticlesContainer = styled.div`
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
         margin-top: 40px;
+    }
+
+    @media(min-width: 800px) {
+        justify-content: flex-start;
     }
 `;
