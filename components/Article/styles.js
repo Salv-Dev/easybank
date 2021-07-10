@@ -3,12 +3,22 @@ import styled from 'styled-components';
 export const Container = styled.article`
     background-color: ${props => props.theme.colors.neutral.white};
     border-radius: 5px;
-    margin-top: 20px;
     border: 1px solid transparent;
+    margin-bottom: 20px;
+    cursor: pointer;
     transition: border .2s ease-in-out;
 
     &:hover, &:active {
         border: 1px solid ${props => props.theme.colors.secondary};
+    }
+
+    @media(min-width: 600px) {
+        width: 250px;
+        margin: 0 20px 20px 0;
+    }
+
+    @media(min-width: 700px) {
+        width: 280px;
     }
 `;
 
@@ -16,6 +26,14 @@ export const Image = styled.img`
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+
+    @media(min-width: 600px) {
+        height: 200px;
+    }
+
+    @media(min-width: 800px) {
+        height: 200px;
+    }
 `;
 
 export const InfosContainer = styled.div`

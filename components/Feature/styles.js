@@ -8,7 +8,6 @@ export const Container = styled.div`
 
     @media(min-width: 600px) {
         width: 50%;
-        padding-right: 20px;
     }
 `;
 
