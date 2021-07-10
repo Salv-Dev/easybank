@@ -2,14 +2,14 @@ import React from 'react';
 
 import { Container, Image, InfosContainer, Author, Title, Description } from './styles';
 
-function ArticleComponent() {
+function ArticleComponent({ data }) {
   return (
       <Container>
-          <Image src="/image-currency.jpg" alt="article-image" />
+          <Image src={data.image} alt="article-image" />
           <InfosContainer>
-            <Author>by Claire Robinson</Author>
-            <Title>Receive money in any currency with no fees</Title>
-            <Description>The world is gettinh smaller and we're becoming more mobile. So why should you be forced to only receive momney in a single...</Description>
+            <Author>by {data.author}</Author>
+            <Title>{data.title}</Title>
+            <Description>{data.desc}</Description>
           </InfosContainer>
       </Container>
   );

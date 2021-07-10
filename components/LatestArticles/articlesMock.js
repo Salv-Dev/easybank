@@ -20,7 +20,8 @@ const articles = [
     {
         title: 'Our invite-only Beta accounts are now live!',
         author: 'Claire Robinson',
-        desc: "After a lot of hard work by the whole team, we're excited to launch our closed beta. It's easy to request an invite through the site ..."
+        desc: "After a lot of hard work by the whole team, we're excited to launch our closed beta. It's easy to request an invite through the site ...",
+        image: '/image-confetti.jpg'
     }
 ];
 
