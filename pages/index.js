@@ -6,6 +6,7 @@ import Header from './../components/Header';
 import Slogan from './../components/Slogan';
 import Features from './../components/Features';
 import LatestArticles from './../components/LatestArticles';
+import Footer from './../components/Footer';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
           <Features />
           <LatestArticles />
         </main>
+        <Footer />
       </div>
     </Theme>
   )

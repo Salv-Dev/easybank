@@ -1,10 +1,21 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, LogoAndSocialMedia, Logo, SocialMedia, Image,  } from './styles';
 
 function FooterComponent() {
   return (
-      <Container></Container>
+      <Container>
+          <LogoAndSocialMedia>
+              <Logo />
+              <SocialMedia>
+                <Image />
+                <Image />
+                <Image />
+                <Image />
+                <Image />
+              </SocialMedia>
+          </LogoAndSocialMedia>
+      </Container>
   );
 }
 
