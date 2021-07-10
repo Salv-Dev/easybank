@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './../Button';
 
-import { Container, LogoAndSocialMedia, Logo, SocialMedia, Icon, Menu, Item, Copyright } from './styles';
+import { Container, LogoAndSocialMedia, Logo, SocialMedia, Icon, Menu, Item, Text, Copyright } from './styles';
 
 function FooterComponent() {
   return (
@@ -29,15 +29,21 @@ function FooterComponent() {
               </SocialMedia>
           </LogoAndSocialMedia>
           <Menu>
-            <Item><a href="#">About</a></Item>
+            <Item><a href="#">About Us</a></Item>
             <Item><a href="#">Contact</a></Item>
             <Item><a href="#">Blog</a></Item>
             <Item><a href="#">Carrers</a></Item>
             <Item><a href="#">Support</a></Item>
             <Item><a href="#">Privacy Policy</a></Item>
           </Menu>
-          <Button>Request Invite</Button>
-          <Copyright>&copy; Easybank. All Rights Reserved</Copyright>
+          <div></div>
+          <Copyright>
+            <div>
+              <div></div>
+              <Button>Request Invite</Button>
+            </div>
+            <Text>&copy; Easybank. All Rights Reserved</Text>
+          </Copyright>
       </Container>
   );
 }
