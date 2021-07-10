@@ -4,11 +4,11 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 20px;
     margin-top: 40px;
 
     @media(min-width: 600px) {
         width: 50%;
+        padding-right: 20px;
     }
 `;
 
