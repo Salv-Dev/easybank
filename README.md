@@ -6,12 +6,12 @@
 Easybank
 </h1>
 
-<p align="center">O <i>Easybank</i> é um banco digital fictício. Este projeto foi feito para testar as habilidades de construção de layout, além disso, o projeto é um desafio feito pela [frontendmentor](https://www.frontendmentor.io)</p>
+<p align="center">O <i>Easybank</i> é um banco digital fictício. Este projeto foi feito para testar as habilidades de construção de layout, além disso, o projeto é um desafio feito pela <a href="https://www.frontendmentor.io">frontendmentor.io</a></p>
 
 [//]: # (Add your gifs/images here:)
 <div>
   <img src="./public/easybank-mobile.png" alt="demo" height="525" />
-  <img src="./public/easybank-desk.png" alt="demo" height="625" />
+  <img src="./public/easybank-desk.png" alt="demo" height="525" />
 </div>
 
 <hr />
